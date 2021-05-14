@@ -57,7 +57,7 @@
     <script>
         function getPin(){
             const random = Math.random()*10000;
-            const pin = (random + '').split('.')[0];
+            const pin = (random + '').split('.')[0]; // generated random number, converted to string using '', did the split using '.', two numbers found in an array - before point and after point, took the first string from the array using [0]
             if(pin.length == 4){
                 return pin;
             }
